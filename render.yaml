@@ -1,0 +1,33 @@
+# render.yaml — Render Blueprint for PRAVAAH Backend
+# https://docs.render.com/blueprint-spec
+
+services:
+  - type: web
+    name: pravaah-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pravaah-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "480"
+      - key: CORS_ORIGINS
+        sync: false  # Set manually to your Vercel frontend URL
+      - key: STALE_DEFAULT_MINUTES
+        value: "60"
+      - key: PYTHON_VERSION
+        value: "3.12"
+
+databases:
+  - name: pravaah-db
+    plan: free
+    databaseName: pravaah
+    postgresMajorVersion: "16"
