@@ -237,24 +237,30 @@ PRAVAAH/
 
 ## 📸 Screenshots
 
-> Screenshots will be added here. To contribute screenshots, add them to a `docs/screenshots/` directory and reference them below.
+### Operational Command Center Dashboard
+*Real-time overview aggregating authority risk level, environmental telemetry, elevated risk zones, active incidents, and simulator status.*
 
-<!--
-<img width="926" height="440" alt="{B247083A-B4BB-4FE0-9F06-17D41FDA6822}" src="https://github.com/user-attachments/assets/f2d656ff-6080-413d-b35e-1c344414a1de" />
-![Dashboard](docs/screenshots/dashboard.png)
-<img width="888" height="432" alt="{313C83F8-66B0-4A0F-BAD8-8792EABBD214}" src="https://github.com/user-attachments/assets/fdf029b2-0602-48f2-9693-c861b05870f9" />
+![Operational Command Center Dashboard](docs/screenshots/dashboard.png)
 
-<img width="889" height="446" alt="{40ECE731-9444-4331-A326-BA40520A83E6}" src="https://github.com/user-attachments/assets/dfbe9082-fcb4-491f-a15c-c9bb3399c639" />
+### Interactive Geospatial Disaster & Risk Map
+*MapLibre GL JS + MapTiler tactical map showing risk zone polygons, evacuation corridors, safe zones, and live sensor markers for Himachal Pradesh (Mandi District).*
 
-<img width="783" height="414" alt="{F2DBE691-371C-44AE-AF82-4878B7AD9706}" src="https://github.com/user-attachments/assets/aa7a33cc-a2b8-46cd-8340-0d076aed5249" />
+![Interactive Geospatial Disaster & Risk Map](docs/screenshots/map-view.png)
 
-<img width="933" height="394" alt="{A9ED6E99-BBB2-4249-AC65-8700A4812F70}" src="https://github.com/user-attachments/assets/a5a0fb07-840f-49d6-b14c-ebc04f7e760a" />
+### Monitored Zones & Risk Matrix
+*Jurisdictional risk overview tracking multi-hazard assessments (flood and landslide), sensor health, and risk levels across monitored zones.*
 
-<img width="599" height="411" alt="{44B1FC37-A7C9-4F75-827C-64B2DD714318}" src="https://github.com/user-attachments/assets/0c86226d-3e31-4c19-aa00-c114cb22e948" />
+![Monitored Zones & Risk Matrix](docs/screenshots/risk-zones.png)
 
+### Incident Management & Dispatch
+*Field incident tracking, status transitions, severity classification, and automated escalation handling.*
 
+![Incident Management & Dispatch](docs/screenshots/incidents.png)
 
--->
+### Rescue Assets & Field Coordination
+*Emergency resource inventory management with PostGIS-powered spatial proximity queries and team deployment tracking.*
+
+![Rescue Assets & Field Coordination](docs/screenshots/response.png)
 
 ---
 
